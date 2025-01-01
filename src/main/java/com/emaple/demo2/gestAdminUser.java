@@ -4,13 +4,13 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
@@ -29,7 +29,7 @@ public class gestAdminUser {
     @FXML private ImageView imageView;
     @FXML private TableView<User> tableView;
     @FXML private TableColumn<User, String> nameColumn, prenomColumn;
-
+@FXML private Button addadmin;
     private FaceDetection faceDetection;
     private VideoCapture capture;
     private Timeline timeline;
@@ -190,6 +190,15 @@ public class gestAdminUser {
         }
 
 
-        
-
+    public void addAdmin(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("addadmin-view.fxml"));
+            Scene scene = new Scene(loader.load(),800,600);
+            Stage stage = (Stage) addadmin.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+}
