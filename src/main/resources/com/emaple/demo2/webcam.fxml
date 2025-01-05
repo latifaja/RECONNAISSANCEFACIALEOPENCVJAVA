@@ -21,4 +21,12 @@
         <!-- Zone de texte pour afficher les résultats -->
         <TextField fx:id="statusTextField" layoutX="20.0" layoutY="510.0" prefWidth="200.0" editable="false"/>
     </children>
+
+
+    <style>
+        -fx-background-image: url("file:/C:/Users/hp/Documents/LAT2/LATPROJ/src/main/resources/images/detImag.jpg");
+
+        -fx-background-size: cover; /* Couvre toute la zone */
+        -fx-background-position: center center; /* Centre l'image */
+    </style>
 </AnchorPane>

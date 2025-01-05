@@ -27,4 +27,10 @@
       <ImageView fx:id="imageView" fitHeight="201.0" fitWidth="354.0" layoutX="387.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="addadmin" layoutX="538.0" layoutY="277.0" mnemonicParsing="false" onAction="#addAdmin" style="-fx-background-color: green;" text="ajouter admin" />
    </children>
+    <style>
+        -fx-background-image: url("file:/C:/Users/hp/Documents/LAT2/LATPROJ/src/main/resources/images/detImag.jpg");
+
+        -fx-background-size: cover; /* Couvre toute la zone */
+        -fx-background-position: center center; /* Centre l'image */
+    </style>
 </AnchorPane>

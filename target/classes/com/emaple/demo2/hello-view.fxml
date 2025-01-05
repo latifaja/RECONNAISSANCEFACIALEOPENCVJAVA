@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emaple.demo2.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emaple.demo2.HelloController">
 
   <children>
     <!-- VBox avec un arrière-plan semi-transparent et des éléments centrés -->
@@ -27,4 +24,12 @@
       </children>
     </VBox>
   </children>
+  <style>
+    -fx-background-image: url("file:/C:/Users/hp/Documents/LAT2/LATPROJ/src/main/resources/images/detImag.jpg");
+
+    -fx-background-size: cover; /* Couvre toute la zone */
+    -fx-background-position: center center; /* Centre l'image */
+  </style>
+
+
 </AnchorPane>
